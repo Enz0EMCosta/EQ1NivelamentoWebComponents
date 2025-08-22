@@ -14,9 +14,11 @@ class FooterLawd extends HTMLElement {
           justify-content : space-between;
           font-family: "MuseoModerno";
           color : rgb(179, 0, 255);
+          text-align: center;
         }
         ul{
           list-style-type: none;
+          margin: 0;
         }
         a{
           color : rgb(179, 0, 255);
@@ -24,36 +26,61 @@ class FooterLawd extends HTMLElement {
           text-decoration: none;
         }
         .logo-lawd{
-          width : 50px;
-          height : 50px;
-          padding-right: 20px;
+          width : 75px;
+          height : 75px;
+          padding-left: 32px;
         }
         .social img{
           width: 20px;
           height: 20px;
           padding: 0px 10px;
-        }
+          }
+        .follow-us{
+          display: flex;
+          flex-direction : column;
+          gap: 1em;
+          padding-bottom: 52px;
+          padding-right: 1em;
+        }  
         .about-us{
           display : flex;
           flex-direction : column;
           align-items: center;
           justify-content : space-between;
+          padding-bottom: 20px;
+          border-left: 1px solid;
+          border-right: 1px solid;
         }
-        .geral, .apresentacao, .social{
+        .about{
+          padding-right: 40px;
+        }
+        .apresentacao{
           display : flex;
           flex-direction : row;
-          justify-content : space-between;
+          align-items: center;
           gap: 2em;
-          #padding: 0px 40px;
+          padding-right: 2em;
+        }
+        .social{
+          display : flex;
+          flex-direction : row;
+          align-items: center;
+          justify-content : space-between;
+          gap: 1em;
         }
         .geral{
+          display : flex;
+          flex-direction : row;
+          align-items: center;
+          justify-content : space-between;
           background: rgb(217, 217, 217);
+          padding: 20px 0px;
         }
         .texto{
           background: rgb(179, 0, 255);
           color: white;
           font-size : 12px;
-          padding: 0px 243px;
+          padding: 0px 258.52px;
         }
           /* aqui dentro vão os estilos do html, igual um arquivo CSS normal*/ 
         
@@ -78,9 +105,9 @@ class FooterLawd extends HTMLElement {
         <div class="follow-us">
           <p>Follow US</p>
           <ul class="social">
-            <li><a href="#"><img src="./images/github-mark-white.png" alt="GitHub"/></a></li>
-            <li><a href="#"><img src="./images/icons8-instagram-50.png" alt="Instagram"/></a></li>
-            <li><a href="#"><img src="./images/icons8-linkedin-50.png" alt="LinkedIn"/></a></li>
+            <li><a href="https://github.com/Lawd-UFS " target="_blank"><img src="./images/github-mark-white.png" alt="GitHub"/></a></li>
+            <li><a href="https://www.instagram.com/lawd.ufs/" target="_blank"><img src="./images/icons8-instagram-50.png" alt="Instagram"/></a></li>
+            <li><a href="https://www.linkedin.com/company/lawd-ufs" target="_blank"><img src="./images/icons8-linkedin-50.png" alt="LinkedIn"/></a></li>
           </ul>
         </div>  
       </div>
