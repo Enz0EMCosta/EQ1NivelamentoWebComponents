@@ -107,6 +107,60 @@ class FooterLawd extends HTMLElement {
             font-weight: 500;
             margin: 0;
         }
+
+        @media (max-width: 1360px) {
+          .logo-section img {
+            width: 5em;
+            height: 5em;
+          }
+          .logo-section h2 {
+            font-size: 2.2rem;
+          }
+
+          .footer-links p {
+            font-size: 1.1rem;
+          }
+        }
+
+        @media (max-width: 768px) {
+
+          
+          .container-main {
+            flex-direction: column; 
+            gap: 40px;             
+            padding: 40px 20px;    
+          }
+
+          .logo-section {
+            flex-direction: column; 
+            text-align: center;     
+            gap: 15px;              
+          }
+          
+          .logo-section img {
+            width: 5em;
+            height: 5em;
+          }
+          .logo-section h2 {
+            font-size: 1.5rem; /* Fonte do slogan bem menor para caber */
+          }
+
+          .about-us {
+            border: none;
+            padding: 0;
+          }
+          
+          .footer-links p {
+            font-size: 1.1rem;
+          }
+
+          .container-text h2 {
+            font-size: 0.8rem;
+            padding: 0 10px; /* Adiciona um respiro caso o texto quebre a linha */
+          }
+
+        }
+
       </style>    
   
       <!-- aqui colocamos as tags do html, que farão parte do nosso footer* -->
